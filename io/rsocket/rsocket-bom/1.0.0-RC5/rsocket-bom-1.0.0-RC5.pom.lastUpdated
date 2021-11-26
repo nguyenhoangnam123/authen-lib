@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Nov 26 13:57:45 ICT 2021
+https\://repo.maven.apache.org/maven2/.lastUpdated=1637909865107
+https\://repo.spring.io/libs-milestone/.error=Could not transfer artifact io.rsocket\:rsocket-bom\:pom\:1.0.0-RC5 from/to spring-milestones (https\://repo.spring.io/libs-milestone)\: Not authorized , ReasonPhrase\: Unauthorized.
+@default-spring-milestones-https\://repo.spring.io/libs-milestone/.lastUpdated=1637909864881

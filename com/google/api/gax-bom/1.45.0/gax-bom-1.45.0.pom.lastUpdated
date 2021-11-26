@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Nov 26 13:57:57 ICT 2021
+https\://repo.maven.apache.org/maven2/.lastUpdated=1637909877799
+https\://repo.spring.io/libs-milestone/.error=Could not transfer artifact com.google.api\:gax-bom\:pom\:1.45.0 from/to spring-milestones (https\://repo.spring.io/libs-milestone)\: Not authorized , ReasonPhrase\: Unauthorized.
+@default-spring-milestones-https\://repo.spring.io/libs-milestone/.lastUpdated=1637909877576

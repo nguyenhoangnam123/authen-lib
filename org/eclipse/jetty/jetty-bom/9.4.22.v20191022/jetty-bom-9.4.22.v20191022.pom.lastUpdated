@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Nov 26 13:57:46 ICT 2021
+https\://repo.maven.apache.org/maven2/.lastUpdated=1637909866932
+https\://repo.spring.io/libs-milestone/.error=Could not transfer artifact org.eclipse.jetty\:jetty-bom\:pom\:9.4.22.v20191022 from/to spring-milestones (https\://repo.spring.io/libs-milestone)\: Not authorized , ReasonPhrase\: Unauthorized.
+@default-spring-milestones-https\://repo.spring.io/libs-milestone/.lastUpdated=1637909866706
