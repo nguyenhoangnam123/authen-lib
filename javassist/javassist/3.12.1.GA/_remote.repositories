@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Nov 26 11:18:19 ICT 2021
+javassist-3.12.1.GA.jar>IT.SeABank.Maven-PrivateProxy=
+javassist-3.12.1.GA.pom>IT.SeABank.Maven-PrivateProxy=

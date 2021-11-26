@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.5.5</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>seabank.api</groupId>
+	<artifactId>AUTHEN_NEW_API</artifactId>
+	<version>01</version>
+	<name>AUTHEN_NEW_API</name>
+	<description>AUTHEN_NEW_API project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<!-- The main class to start by executing "java -jar" -->
+		<start-class>seabank.ms.app.SeabApiBootApplication</start-class>
+	</properties>
+
+	<!-- Nexus repository host for pulling dependencies -->
+	<repositories>
+		<repository>
+            <id>IT.SeABank.Maven-PrivateProxy</id>
+            <name>IT.SeABank.Maven-PrivateProxy</name>
+            <url>http://10.6.70.63:8081/repository/IT.SeABank.Maven-PrivateProxy</url>
+        </repository>
+    </repositories>
+
+	<!-- Nexus repository host for deploying dependencies -->
+	<distributionManagement>
+        <repository>
+            <id>IT.SeABank.Maven-Hosted</id>
+            <name>IT.SeABank.Maven.QLDA-Hosted</name>
+            <url>http://10.6.70.63:8081/repository/IT.SeABank.Maven-Hosted/</url>
+        </repository>
+    </distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>seabank.api</groupId>
+			<artifactId>ms_app</artifactId>
+			<version>nam.nh22</version>
+		</dependency>
+		<dependency>
+			<groupId>seabank.api</groupId>
+			<version>nam.nh22</version>
+			<artifactId>ms_utility</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>seabank.api</groupId>
+			<artifactId>ms_apiclient</artifactId>
+			<version>nam.nh22</version>
+		</dependency>
+		<dependency>
+			<groupId>seabank.api</groupId>
+			<artifactId>ms_eisclient</artifactId>
+			<version>nam.nh22</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>seabank.api</groupId>
+			<artifactId>ms_eisclient_v1</artifactId>
+			<version>nam.nh22</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.ulisesbocchio</groupId>
+			<artifactId>jasypt-spring-boot-starter</artifactId>
+			<version>3.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>co.elastic.apm</groupId>
+			<artifactId>apm-agent-api</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>19.3.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>3.2.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.reflections</groupId>
+			<artifactId>reflections-maven</artifactId>
+			<version>0.9.8</version>
+		</dependency>
+
+ 
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>axis</groupId>
+			<artifactId>axis</artifactId>
+			<version>1.4</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>axis-jaxrpc</artifactId>
+					<groupId>axis</groupId>
+				</exclusion>
+				<!-- <exclusion> <artifactId>commons-logging</artifactId> <groupId>commons-logging</groupId> 
+					</exclusion> -->
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml</groupId>
+			<artifactId>jaxrpc-api</artifactId>
+			<version>1.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
+		<dependency>
+		    <groupId>org.bouncycastle</groupId>
+		    <artifactId>bcprov-jdk15on</artifactId>
+		    <version>1.68</version>
+		</dependency>
+		<dependency> 
+			<groupId>net.logstash.logback</groupId> 
+			<artifactId>logstash-logback-encoder</artifactId> 
+			<version>4.11</version> 
+		</dependency>		
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <layers>
+                        <enabled>true</enabled>
+                        <configuration>${project.basedir}/src/layers.xml</configuration>
+                    </layers>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>				
+			</plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.2.0</version>
+				<executions>
+					<execution>
+						<id>copy-resource-one</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/classes/META-INF</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/src/main/java/META-INF</directory>
+									<includes>
+										<include>persistence.xml</include>
+									</includes>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>				
+            </plugin>			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.22.0</version>
+			</plugin>
+		</plugins>
+	</build>
+</project>

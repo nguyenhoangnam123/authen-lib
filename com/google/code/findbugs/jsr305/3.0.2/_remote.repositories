@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Nov 26 11:22:42 ICT 2021
+jsr305-3.0.2.jar>IT.SeABank.Maven-PrivateProxy=
+jsr305-3.0.2.jar>central=
+jsr305-3.0.2.pom>IT.SeABank.Maven-PrivateProxy=

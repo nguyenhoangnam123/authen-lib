@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Nov 26 11:21:07 ICT 2021
+junit-4.12.jar>IT.SeABank.Maven-PrivateProxy=
+junit-4.12.pom>IT.SeABank.Maven-PrivateProxy=
+junit-4.12.jar>central=
+junit-4.12.pom>central=

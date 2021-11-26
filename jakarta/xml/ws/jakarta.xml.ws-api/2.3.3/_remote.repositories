@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Nov 26 11:18:19 ICT 2021
+jakarta.xml.ws-api-2.3.3.jar>IT.SeABank.Maven-PrivateProxy=
+jakarta.xml.ws-api-2.3.3.pom>IT.SeABank.Maven-PrivateProxy=
